@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "PMRootViewController.h"
+#import "PMNavigationController.h"
+#import "PMMainViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,8 +23,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor blackColor];
     
-    PMRootViewController *rootVC = [[PMRootViewController alloc] init];
-    self.window.rootViewController = rootVC;
+    PMMainViewController *rootVC = [[PMMainViewController alloc] init];
+    PMNavigationController *nav = [[PMNavigationController alloc] initWithRootViewController:rootVC];
+    self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
     return YES;

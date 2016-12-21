@@ -5,6 +5,7 @@ def pods
   pod 'AFNetworking', '~> 3.1.0'
   pod 'ORStackView', '~> 3.0.1'
   pod 'SDAutoLayout', '~> 2.1.7'
+  pod 'THPinViewController'
 end
 target 'PasswordMini' do
   pods

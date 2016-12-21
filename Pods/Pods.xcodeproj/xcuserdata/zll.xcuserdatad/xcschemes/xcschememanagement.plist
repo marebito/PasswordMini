@@ -29,8 +29,44 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>THPinViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>20A16341D261E0D41DE2C00F87B935DD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3AE90DFB93D65F7396D01DCC98504F59</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>70261D31B0193955A561D7AA9CBA3E88</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>899D898D8C59153B9B5D5A9E366C0699</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9E033EDB5EC0819481B0546434FA577B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BDCDE15AB3D74A3637F110D90D168A2E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>
