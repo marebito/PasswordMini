@@ -16,6 +16,7 @@
 @interface PMMainViewController ()<THPinViewControllerDelegate, UICollectionViewDelegate, UICollectionViewDataSource>
 @property(nonatomic, strong) NSString *correctPin;
 @property(nonatomic, assign) NSInteger remainingPinEntries;
+@property(nonatomic, strong) THPinViewController *pinViewController;
 @property(nonatomic, strong) UICollectionView *mCollectionView;
 @end
 
@@ -30,22 +31,23 @@
     
     UICollectionViewLayout *layout = [[UICollectionViewLayout alloc] init];
     _mCollectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
+    _mCollectionView.backgroundColor = [UIColor whiteColor];
     _mCollectionView.delegate = self;
     _mCollectionView.dataSource = self;
     [_mCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:kMainViewCollectionCellIdentifier];
     [self.view addSubview:_mCollectionView];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        THPinViewController *pinViewController = [[THPinViewController alloc] initWithDelegate:self];
-        pinViewController.promptTitle = @"请输入密码";
-        pinViewController.promptColor = [UIColor darkTextColor];
-        pinViewController.view.tintColor = [UIColor darkTextColor];
-        pinViewController.hideLetters = NO;
-        pinViewController.backgroundColor = [UIColor whiteColor];
+        _pinViewController = [[THPinViewController alloc] initWithDelegate:self];
+        _pinViewController.promptTitle = @"请输入密码";
+        _pinViewController.promptColor = [UIColor darkTextColor];
+        _pinViewController.view.tintColor = [UIColor darkTextColor];
+        _pinViewController.hideLetters = NO;
+        _pinViewController.backgroundColor = [UIColor whiteColor];
         self.view.tag = THPinViewControllerContentViewTag;
         self.modalPresentationStyle = UIModalPresentationCurrentContext;
         
-        [self presentViewController:pinViewController animated:NO completion:nil];
+        [self presentViewController:_pinViewController animated:NO completion:nil];
     });
 }
 

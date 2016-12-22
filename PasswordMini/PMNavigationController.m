@@ -16,7 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    UINavigationBar *navigationBar = self.navigationBar;
+    [navigationBar setShadowImage:[UIImage new]];
+    self.navigationBar.barStyle = UIBarStyleBlack;
+    [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x000000)];
+    NSDictionary *dict = @{
+                           NSForegroundColorAttributeName : [UIColor whiteColor]
+                           };
+    [navigationBar setTitleTextAttributes:dict];
 }
 
 - (void)didReceiveMemoryWarning {

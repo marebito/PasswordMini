@@ -18,6 +18,7 @@
 		54B0818B1E0ABD2100CEE760 /* PMBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B0818A1E0ABD2100CEE760 /* PMBaseController.m */; };
 		54B0819F1E0ADA3700CEE760 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B0819D1E0ADA3700CEE760 /* Default-568h@2x.png */; };
 		54B081A01E0ADA3700CEE760 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B0819E1E0ADA3700CEE760 /* Default@2x.png */; };
+		54EE0E001E0B557500ACD887 /* clear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54EE0DFF1E0B557500ACD887 /* clear@2x.png */; };
 		B7F806B7EC97807BC6EFC007 /* libPods-PasswordMini.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A7B9AC2F8C2302BEB5BDE9 /* libPods-PasswordMini.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,8 @@
 		54B0818A1E0ABD2100CEE760 /* PMBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMBaseController.m; sourceTree = "<group>"; };
 		54B0819D1E0ADA3700CEE760 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		54B0819E1E0ADA3700CEE760 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		54EE0DFF1E0B557500ACD887 /* clear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clear@2x.png"; sourceTree = "<group>"; };
+		54EE0E011E0B5BEC00ACD887 /* Public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Public.h; sourceTree = "<group>"; };
 		5CC5B4D46ECB9897F32EF791 /* Pods-PasswordMini.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordMini.release.xcconfig"; path = "Pods/Target Support Files/Pods-PasswordMini/Pods-PasswordMini.release.xcconfig"; sourceTree = "<group>"; };
 		98A7B9AC2F8C2302BEB5BDE9 /* libPods-PasswordMini.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PasswordMini.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -114,6 +117,8 @@
 		54B081721E0AB9A900CEE760 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				54EE0E011E0B5BEC00ACD887 /* Public.h */,
+				54EE0DFF1E0B557500ACD887 /* clear@2x.png */,
 				54553DDC1E0AE40B00461EE4 /* PrefixHeader.pch */,
 				54B0819D1E0ADA3700CEE760 /* Default-568h@2x.png */,
 				54B0819E1E0ADA3700CEE760 /* Default@2x.png */,
@@ -192,6 +197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54EE0E001E0B557500ACD887 /* clear@2x.png in Resources */,
 				54B081A01E0ADA3700CEE760 /* Default@2x.png in Resources */,
 				54B0817F1E0AB9A900CEE760 /* Assets.xcassets in Resources */,
 				54B0819F1E0ADA3700CEE760 /* Default-568h@2x.png in Resources */,
