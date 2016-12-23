@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4814D548FCCD9DDD5E111142 /* Pods_PasswordMini.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92EB8CA85ABBFB1BDD9D526F /* Pods_PasswordMini.framework */; };
 		54312EB91E0CA383005D2CA0 /* PMPasswordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54312EB81E0CA383005D2CA0 /* PMPasswordManager.m */; };
 		54312EBB1E0CA4EB005D2CA0 /* PasswordMini.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 54312EBA1E0CA4EB005D2CA0 /* PasswordMini.sqlite3 */; };
 		54553DD01E0AE18300461EE4 /* PMHomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54553DCF1E0AE18300461EE4 /* PMHomePageController.m */; };
@@ -18,10 +19,12 @@
 		54B081771E0AB9A900CEE760 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B081761E0AB9A900CEE760 /* AppDelegate.m */; };
 		54B0817F1E0AB9A900CEE760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54B0817E1E0AB9A900CEE760 /* Assets.xcassets */; };
 		54B0818B1E0ABD2100CEE760 /* PMBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B0818A1E0ABD2100CEE760 /* PMBaseController.m */; };
-		54B0819F1E0ADA3700CEE760 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B0819D1E0ADA3700CEE760 /* Default-568h@2x.png */; };
-		54B081A01E0ADA3700CEE760 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B0819E1E0ADA3700CEE760 /* Default@2x.png */; };
-		54EE0E001E0B557500ACD887 /* clear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54EE0DFF1E0B557500ACD887 /* clear@2x.png */; };
-		B7F806B7EC97807BC6EFC007 /* libPods-PasswordMini.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A7B9AC2F8C2302BEB5BDE9 /* libPods-PasswordMini.a */; };
+		54E42E011E0CFEF000EC1FBA /* clear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54E42DFD1E0CFEF000EC1FBA /* clear@2x.png */; };
+		54E42E021E0CFEF000EC1FBA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54E42DFE1E0CFEF000EC1FBA /* Default-568h@2x.png */; };
+		54E42E031E0CFEF000EC1FBA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54E42DFF1E0CFEF000EC1FBA /* Default@2x.png */; };
+		54E42E041E0CFEF000EC1FBA /* main_lock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54E42E001E0CFEF000EC1FBA /* main_lock@2x.png */; };
+		54E42E071E0CFF6A00EC1FBA /* AppDelegate+Password.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E42E061E0CFF6A00EC1FBA /* AppDelegate+Password.m */; };
+		54E42E0D1E0D022400EC1FBA /* NSObject+CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E42E0C1E0D022400EC1FBA /* NSObject+CountDown.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,12 +52,19 @@
 		54B081831E0AB9A900CEE760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54B081891E0ABD2100CEE760 /* PMBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMBaseController.h; sourceTree = "<group>"; };
 		54B0818A1E0ABD2100CEE760 /* PMBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMBaseController.m; sourceTree = "<group>"; };
-		54B0819D1E0ADA3700CEE760 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		54B0819E1E0ADA3700CEE760 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		54EE0DFF1E0B557500ACD887 /* clear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clear@2x.png"; sourceTree = "<group>"; };
+		54E42DFD1E0CFEF000EC1FBA /* clear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clear@2x.png"; sourceTree = "<group>"; };
+		54E42DFE1E0CFEF000EC1FBA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		54E42DFF1E0CFEF000EC1FBA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		54E42E001E0CFEF000EC1FBA /* main_lock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main_lock@2x.png"; sourceTree = "<group>"; };
+		54E42E051E0CFF6A00EC1FBA /* AppDelegate+Password.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Password.h"; sourceTree = "<group>"; };
+		54E42E061E0CFF6A00EC1FBA /* AppDelegate+Password.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Password.m"; sourceTree = "<group>"; };
+		54E42E0B1E0D022400EC1FBA /* NSObject+CountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CountDown.h"; sourceTree = "<group>"; };
+		54E42E0C1E0D022400EC1FBA /* NSObject+CountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CountDown.m"; sourceTree = "<group>"; };
+		54E42E101E0D142D00EC1FBA /* PasswordMini-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PasswordMini-Bridging-Header.h"; sourceTree = "<group>"; };
+		54E4320D1E0D306300EC1FBA /* PasswordMini-Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PasswordMini-Swift.h"; sourceTree = "<group>"; };
 		54EE0E011E0B5BEC00ACD887 /* Public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Public.h; sourceTree = "<group>"; };
 		5CC5B4D46ECB9897F32EF791 /* Pods-PasswordMini.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordMini.release.xcconfig"; path = "Pods/Target Support Files/Pods-PasswordMini/Pods-PasswordMini.release.xcconfig"; sourceTree = "<group>"; };
-		98A7B9AC2F8C2302BEB5BDE9 /* libPods-PasswordMini.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PasswordMini.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92EB8CA85ABBFB1BDD9D526F /* Pods_PasswordMini.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PasswordMini.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7F806B7EC97807BC6EFC007 /* libPods-PasswordMini.a in Frameworks */,
+				4814D548FCCD9DDD5E111142 /* Pods_PasswordMini.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +111,8 @@
 			children = (
 				54B081751E0AB9A900CEE760 /* AppDelegate.h */,
 				54B081761E0AB9A900CEE760 /* AppDelegate.m */,
+				54E42E051E0CFF6A00EC1FBA /* AppDelegate+Password.h */,
+				54E42E061E0CFF6A00EC1FBA /* AppDelegate+Password.m */,
 				54553DE21E0AEE7600461EE4 /* PMNavigationController.h */,
 				54553DE31E0AEE7600461EE4 /* PMNavigationController.m */,
 				54553DDD1E0AE61C00461EE4 /* PMMainViewController.h */,
@@ -115,9 +127,12 @@
 				54553DD81E0AE20D00461EE4 /* PMSettingViewController.m */,
 				54312EB71E0CA383005D2CA0 /* PMPasswordManager.h */,
 				54312EB81E0CA383005D2CA0 /* PMPasswordManager.m */,
+				54E42E0B1E0D022400EC1FBA /* NSObject+CountDown.h */,
+				54E42E0C1E0D022400EC1FBA /* NSObject+CountDown.m */,
 				54B0817E1E0AB9A900CEE760 /* Assets.xcassets */,
 				54B081831E0AB9A900CEE760 /* Info.plist */,
 				54B081721E0AB9A900CEE760 /* Supporting Files */,
+				54E42E101E0D142D00EC1FBA /* PasswordMini-Bridging-Header.h */,
 			);
 			path = PasswordMini;
 			sourceTree = "<group>";
@@ -125,22 +140,32 @@
 		54B081721E0AB9A900CEE760 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				54E42DFC1E0CFEF000EC1FBA /* images */,
 				54312EBA1E0CA4EB005D2CA0 /* PasswordMini.sqlite3 */,
 				54EE0E011E0B5BEC00ACD887 /* Public.h */,
 				54312EBC1E0CA87F005D2CA0 /* Flags.h */,
-				54EE0DFF1E0B557500ACD887 /* clear@2x.png */,
 				54553DDC1E0AE40B00461EE4 /* PrefixHeader.pch */,
-				54B0819D1E0ADA3700CEE760 /* Default-568h@2x.png */,
-				54B0819E1E0ADA3700CEE760 /* Default@2x.png */,
 				54B081731E0AB9A900CEE760 /* main.m */,
+				54E4320D1E0D306300EC1FBA /* PasswordMini-Swift.h */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54E42DFC1E0CFEF000EC1FBA /* images */ = {
+			isa = PBXGroup;
+			children = (
+				54E42DFD1E0CFEF000EC1FBA /* clear@2x.png */,
+				54E42DFE1E0CFEF000EC1FBA /* Default-568h@2x.png */,
+				54E42DFF1E0CFEF000EC1FBA /* Default@2x.png */,
+				54E42E001E0CFEF000EC1FBA /* main_lock@2x.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		9B094BA37D4ED098BDC1B086 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				98A7B9AC2F8C2302BEB5BDE9 /* libPods-PasswordMini.a */,
+				92EB8CA85ABBFB1BDD9D526F /* Pods_PasswordMini.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -180,6 +205,7 @@
 					54B0816E1E0AB9A900CEE760 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = LQW337MH2W;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -207,11 +233,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54EE0E001E0B557500ACD887 /* clear@2x.png in Resources */,
+				54E42E011E0CFEF000EC1FBA /* clear@2x.png in Resources */,
+				54E42E021E0CFEF000EC1FBA /* Default-568h@2x.png in Resources */,
+				54E42E031E0CFEF000EC1FBA /* Default@2x.png in Resources */,
 				54312EBB1E0CA4EB005D2CA0 /* PasswordMini.sqlite3 in Resources */,
-				54B081A01E0ADA3700CEE760 /* Default@2x.png in Resources */,
+				54E42E041E0CFEF000EC1FBA /* main_lock@2x.png in Resources */,
 				54B0817F1E0AB9A900CEE760 /* Assets.xcassets in Resources */,
-				54B0819F1E0ADA3700CEE760 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +257,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		2E79CF1FAA6CF2E60B89D720 /* [CP] Copy Pods Resources */ = {
@@ -277,6 +304,8 @@
 				54553DD91E0AE20D00461EE4 /* PMSettingViewController.m in Sources */,
 				54553DE41E0AEE7600461EE4 /* PMNavigationController.m in Sources */,
 				54B081741E0AB9A900CEE760 /* main.m in Sources */,
+				54E42E0D1E0D022400EC1FBA /* NSObject+CountDown.m in Sources */,
+				54E42E071E0CFF6A00EC1FBA /* AppDelegate+Password.m in Sources */,
 				54553DD31E0AE1A100461EE4 /* PMAccountViewController.m in Sources */,
 				54553DE01E0AE61C00461EE4 /* PMMainViewController.m in Sources */,
 			);
@@ -380,17 +409,23 @@
 			baseConfigurationReference = 3896448EF80AAC09018D1966 /* Pods-PasswordMini.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LQW337MH2W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(TARGET_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = PasswordMini/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.godlike.PasswordMini;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PasswordMini/PasswordMini-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -399,17 +434,22 @@
 			baseConfigurationReference = 5CC5B4D46ECB9897F32EF791 /* Pods-PasswordMini.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LQW337MH2W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(TARGET_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = PasswordMini/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.godlike.PasswordMini;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PasswordMini/PasswordMini-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

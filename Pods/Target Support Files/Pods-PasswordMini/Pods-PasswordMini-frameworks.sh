@@ -82,3 +82,26 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/FLKAutoLayout/FLKAutoLayout.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/FMDB/FMDB.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/GCDWebServer/GCDWebServer.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ORStackView/ORStackView.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RNCryptor/RNCryptor.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SAMKeychain/SAMKeychain.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SDAutoLayout/SDAutoLayout.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/THPinViewController/THPinViewController.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/FLKAutoLayout/FLKAutoLayout.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/FMDB/FMDB.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/GCDWebServer/GCDWebServer.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ORStackView/ORStackView.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RNCryptor/RNCryptor.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SAMKeychain/SAMKeychain.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SDAutoLayout/SDAutoLayout.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/THPinViewController/THPinViewController.framework"
+fi

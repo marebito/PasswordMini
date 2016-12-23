@@ -7,17 +7,12 @@
 //
 
 #import "PMMainViewController.h"
-#import "THPinViewController.h"
-#import "PMPasswordManager.h"
 
 #define kMainViewCollectionCellIdentifier @"kMainViewCollectionCellIdentifier"
 #define kMainViewCollectionFooterIdentifier @"kMainViewCollectionFooterIdentifier"
 #define kMainViewCollectionHeaderIdentifier @"kMainViewCollectionHeaderIdentifier"
 
-@interface PMMainViewController ()<THPinViewControllerDelegate, UICollectionViewDelegate, UICollectionViewDataSource>
-@property(nonatomic, strong) NSString *correctPin;
-@property(nonatomic, assign) NSInteger remainingPinEntries;
-@property(nonatomic, strong) THPinViewController *pinViewController;
+@interface PMMainViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
 @property(nonatomic, strong) UICollectionView *mCollectionView;
 @end
 
@@ -30,8 +25,6 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [PMPasswordManager sharedInstance];
-        
     UICollectionViewLayout *layout = [[UICollectionViewLayout alloc] init];
     _mCollectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
     _mCollectionView.backgroundColor = [UIColor whiteColor];
@@ -39,55 +32,12 @@
     _mCollectionView.dataSource = self;
     [_mCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:kMainViewCollectionCellIdentifier];
     [self.view addSubview:_mCollectionView];
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        _pinViewController = [[THPinViewController alloc] initWithDelegate:self];
-        _pinViewController.promptTitle = @"请输入密码";
-        _pinViewController.promptColor = [UIColor darkTextColor];
-        _pinViewController.view.tintColor = [UIColor darkTextColor];
-        _pinViewController.hideLetters = NO;
-        _pinViewController.backgroundColor = [UIColor whiteColor];
-        self.view.tag = THPinViewControllerContentViewTag;
-        self.modalPresentationStyle = UIModalPresentationCurrentContext;
-        
-        [self presentViewController:_pinViewController animated:NO completion:nil];
-    });
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-- (NSUInteger)pinLengthForPinViewController:(THPinViewController *)pinViewController
-{
-    return 4;
-}
-
-- (BOOL)pinViewController:(THPinViewController *)pinViewController isPinValid:(NSString *)pin
-{
-    if ([pin isEqualToString:self.correctPin]) {
-        return YES;
-    } else {
-        self.remainingPinEntries--;
-        return NO;
-    }
-}
-
-- (BOOL)userCanRetryInPinViewController:(THPinViewController *)pinViewController
-{
-    return (self.remainingPinEntries > 0);
-}
-
-// optional delegate methods
-
-- (void)incorrectPinEnteredInPinViewController:(THPinViewController *)pinViewController {}
-- (void)pinViewControllerWillDismissAfterPinEntryWasSuccessful:(THPinViewController *)pinViewController {}
-- (void)pinViewControllerDidDismissAfterPinEntryWasSuccessful:(THPinViewController *)pinViewController {}
-- (void)pinViewControllerWillDismissAfterPinEntryWasUnsuccessful:(THPinViewController *)pinViewController {}
-- (void)pinViewControllerDidDismissAfterPinEntryWasUnsuccessful:(THPinViewController *)pinViewController {}
-- (void)pinViewControllerWillDismissAfterPinEntryWasCancelled:(THPinViewController *)pinViewController {}
-- (void)pinViewControllerDidDismissAfterPinEntryWasCancelled:(THPinViewController *)pinViewController {}
 
 #pragma mark - UICollectionViewDataSource
 
@@ -121,11 +71,11 @@
     
     UILabel *label = (UILabel *)[view viewWithTag:1];
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]){
-        label.text = [NSString stringWithFormat:@"这是header:%ld",(long)indexPath.section];
+        label.text = [NSString stringWithFormat:@"这是header:%d",indexPath.section];
     }
     else if ([kind isEqualToString:UICollectionElementKindSectionFooter]){
         view.backgroundColor = [UIColor lightGrayColor];
-        label.text = [NSString stringWithFormat:@"这是footer:%ld",(long)indexPath.section];
+        label.text = [NSString stringWithFormat:@"这是footer:%d",indexPath.section];
     }
     return view;
 }

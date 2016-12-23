@@ -95,4 +95,6 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
 
 #define DOCPATH [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
 
+#define PM_TIMESTAMP @((long long)[[NSDate date] timeIntervalSince1970])
+
 #endif /* Public_h */

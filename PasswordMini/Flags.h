@@ -11,4 +11,6 @@
 
 #define MAIN_PSWD_HAS_SAVED @"MAIN_PSWD_HAS_SAVED" // 主密码是否被保存
 
+#define LAST_PSWD_ERROR_TIMESTAMP @"LAST_PSWD_ERROR_TIMESTAMP" // 最后输入错误密码时间戳
+
 #endif /* Flags_h */
