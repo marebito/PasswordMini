@@ -6,6 +6,8 @@ def pods
   pod 'ORStackView', '~> 3.0.1'
   pod 'SDAutoLayout', '~> 2.1.7'
   pod 'THPinViewController'
+  pod 'SAMKeychain'
+  pod 'FMDB'
 end
 target 'PasswordMini' do
   pods

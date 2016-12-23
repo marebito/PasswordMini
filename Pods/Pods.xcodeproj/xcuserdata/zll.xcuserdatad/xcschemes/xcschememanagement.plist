@@ -14,12 +14,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FMDB.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ORStackView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-PasswordMini.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SAMKeychain.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,7 +47,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>20A16341D261E0D41DE2C00F87B935DD</key>
+		<key>2E14D1677BD79AA28ED27486D5D940F4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +57,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>6EFEC232B717F7437E8C81AC1D7AA432</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>70261D31B0193955A561D7AA9CBA3E88</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>899D898D8C59153B9B5D5A9E366C0699</key>
+		<key>8642CC820CE8C5B88C113D7F47AF4BC3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BDCDE15AB3D74A3637F110D90D168A2E</key>
+		<key>9EA03ECE3D2E51BE218E08ECEF4BA6CF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A0FFFDFA0EFC4A8621856B52B5F329DB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

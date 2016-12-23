@@ -8,6 +8,7 @@
 
 #import "PMMainViewController.h"
 #import "THPinViewController.h"
+#import "PMPasswordManager.h"
 
 #define kMainViewCollectionCellIdentifier @"kMainViewCollectionCellIdentifier"
 #define kMainViewCollectionFooterIdentifier @"kMainViewCollectionFooterIdentifier"
@@ -29,6 +30,8 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
+    [PMPasswordManager sharedInstance];
+        
     UICollectionViewLayout *layout = [[UICollectionViewLayout alloc] init];
     _mCollectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
     _mCollectionView.backgroundColor = [UIColor whiteColor];
@@ -118,11 +121,11 @@
     
     UILabel *label = (UILabel *)[view viewWithTag:1];
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]){
-        label.text = [NSString stringWithFormat:@"这是header:%d",indexPath.section];
+        label.text = [NSString stringWithFormat:@"这是header:%ld",(long)indexPath.section];
     }
     else if ([kind isEqualToString:UICollectionElementKindSectionFooter]){
         view.backgroundColor = [UIColor lightGrayColor];
-        label.text = [NSString stringWithFormat:@"这是footer:%d",indexPath.section];
+        label.text = [NSString stringWithFormat:@"这是footer:%ld",(long)indexPath.section];
     }
     return view;
 }

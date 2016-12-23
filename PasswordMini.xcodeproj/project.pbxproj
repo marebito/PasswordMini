@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54312EB91E0CA383005D2CA0 /* PMPasswordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54312EB81E0CA383005D2CA0 /* PMPasswordManager.m */; };
+		54312EBB1E0CA4EB005D2CA0 /* PasswordMini.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 54312EBA1E0CA4EB005D2CA0 /* PasswordMini.sqlite3 */; };
 		54553DD01E0AE18300461EE4 /* PMHomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54553DCF1E0AE18300461EE4 /* PMHomePageController.m */; };
 		54553DD31E0AE1A100461EE4 /* PMAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54553DD21E0AE1A100461EE4 /* PMAccountViewController.m */; };
 		54553DD91E0AE20D00461EE4 /* PMSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54553DD81E0AE20D00461EE4 /* PMSettingViewController.m */; };
@@ -24,6 +26,10 @@
 
 /* Begin PBXFileReference section */
 		3896448EF80AAC09018D1966 /* Pods-PasswordMini.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordMini.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PasswordMini/Pods-PasswordMini.debug.xcconfig"; sourceTree = "<group>"; };
+		54312EB71E0CA383005D2CA0 /* PMPasswordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMPasswordManager.h; sourceTree = "<group>"; };
+		54312EB81E0CA383005D2CA0 /* PMPasswordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMPasswordManager.m; sourceTree = "<group>"; };
+		54312EBA1E0CA4EB005D2CA0 /* PasswordMini.sqlite3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PasswordMini.sqlite3; sourceTree = "<group>"; };
+		54312EBC1E0CA87F005D2CA0 /* Flags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flags.h; sourceTree = "<group>"; };
 		54553DCE1E0AE18300461EE4 /* PMHomePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMHomePageController.h; sourceTree = "<group>"; };
 		54553DCF1E0AE18300461EE4 /* PMHomePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMHomePageController.m; sourceTree = "<group>"; };
 		54553DD11E0AE1A100461EE4 /* PMAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMAccountViewController.h; sourceTree = "<group>"; };
@@ -107,6 +113,8 @@
 				54553DD21E0AE1A100461EE4 /* PMAccountViewController.m */,
 				54553DD71E0AE20D00461EE4 /* PMSettingViewController.h */,
 				54553DD81E0AE20D00461EE4 /* PMSettingViewController.m */,
+				54312EB71E0CA383005D2CA0 /* PMPasswordManager.h */,
+				54312EB81E0CA383005D2CA0 /* PMPasswordManager.m */,
 				54B0817E1E0AB9A900CEE760 /* Assets.xcassets */,
 				54B081831E0AB9A900CEE760 /* Info.plist */,
 				54B081721E0AB9A900CEE760 /* Supporting Files */,
@@ -117,7 +125,9 @@
 		54B081721E0AB9A900CEE760 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				54312EBA1E0CA4EB005D2CA0 /* PasswordMini.sqlite3 */,
 				54EE0E011E0B5BEC00ACD887 /* Public.h */,
+				54312EBC1E0CA87F005D2CA0 /* Flags.h */,
 				54EE0DFF1E0B557500ACD887 /* clear@2x.png */,
 				54553DDC1E0AE40B00461EE4 /* PrefixHeader.pch */,
 				54B0819D1E0ADA3700CEE760 /* Default-568h@2x.png */,
@@ -198,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54EE0E001E0B557500ACD887 /* clear@2x.png in Resources */,
+				54312EBB1E0CA4EB005D2CA0 /* PasswordMini.sqlite3 in Resources */,
 				54B081A01E0ADA3700CEE760 /* Default@2x.png in Resources */,
 				54B0817F1E0AB9A900CEE760 /* Assets.xcassets in Resources */,
 				54B0819F1E0ADA3700CEE760 /* Default-568h@2x.png in Resources */,
@@ -260,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54B0818B1E0ABD2100CEE760 /* PMBaseController.m in Sources */,
+				54312EB91E0CA383005D2CA0 /* PMPasswordManager.m in Sources */,
 				54553DD01E0AE18300461EE4 /* PMHomePageController.m in Sources */,
 				54B081771E0AB9A900CEE760 /* AppDelegate.m in Sources */,
 				54553DD91E0AE20D00461EE4 /* PMSettingViewController.m in Sources */,
