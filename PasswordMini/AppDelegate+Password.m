@@ -24,10 +24,10 @@
 - (void)saveUserMainPswd:(NSString *)pswd
 {
     NSData *data = [pswd dataUsingEncoding:NSUTF8StringEncoding];
+    // 此处密钥需要打入.a静态库以防止被破解
     NSString *password = @"Secret password";
     
-    RNCryptor.encrypt(data, password);
-//    NSData *ciphertext = [RNENCryptor encryptData:data password:password];
+    NSData *cipherData = [RNCryptorHelper encryptWithData:data withPassword:password];
 //
 //    // Decryption
 //    NSError *error = nil;
