@@ -10,8 +10,9 @@
 		4814D548FCCD9DDD5E111142 /* Pods_PasswordMini.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92EB8CA85ABBFB1BDD9D526F /* Pods_PasswordMini.framework */; };
 		54312EB91E0CA383005D2CA0 /* PMPasswordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54312EB81E0CA383005D2CA0 /* PMPasswordManager.m */; };
 		54312EBB1E0CA4EB005D2CA0 /* PasswordMini.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 54312EBA1E0CA4EB005D2CA0 /* PasswordMini.sqlite3 */; };
+		543234481E10E2E000D65E3A /* Web in Resources */ = {isa = PBXBuildFile; fileRef = 543234471E10E2E000D65E3A /* Web */; };
+		5432344C1E10EB3C00D65E3A /* PMWebUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5432344B1E10EB3C00D65E3A /* PMWebUploader.m */; };
 		54462E861E0DFBD100689A8C /* RNCryptorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54462E851E0DFBD100689A8C /* RNCryptorHelper.swift */; };
-		54462E921E0E077B00689A8C /* PMPinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54462E911E0E077B00689A8C /* PMPinViewController.m */; };
 		54553DD01E0AE18300461EE4 /* PMHomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54553DCF1E0AE18300461EE4 /* PMHomePageController.m */; };
 		54553DD31E0AE1A100461EE4 /* PMAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54553DD21E0AE1A100461EE4 /* PMAccountViewController.m */; };
 		54553DD91E0AE20D00461EE4 /* PMSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54553DD81E0AE20D00461EE4 /* PMSettingViewController.m */; };
@@ -35,10 +36,11 @@
 		54312EB81E0CA383005D2CA0 /* PMPasswordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMPasswordManager.m; sourceTree = "<group>"; };
 		54312EBA1E0CA4EB005D2CA0 /* PasswordMini.sqlite3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PasswordMini.sqlite3; sourceTree = "<group>"; };
 		54312EBC1E0CA87F005D2CA0 /* Flags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flags.h; sourceTree = "<group>"; };
+		543234471E10E2E000D65E3A /* Web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Web; sourceTree = "<group>"; };
+		5432344A1E10EB3C00D65E3A /* PMWebUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMWebUploader.h; sourceTree = "<group>"; };
+		5432344B1E10EB3C00D65E3A /* PMWebUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMWebUploader.m; sourceTree = "<group>"; };
 		54462E841E0D491000689A8C /* PasswordMini-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PasswordMini-Bridging-Header.h"; sourceTree = "<group>"; };
 		54462E851E0DFBD100689A8C /* RNCryptorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNCryptorHelper.swift; sourceTree = "<group>"; };
-		54462E901E0E077B00689A8C /* PMPinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMPinViewController.h; sourceTree = "<group>"; };
-		54462E911E0E077B00689A8C /* PMPinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMPinViewController.m; sourceTree = "<group>"; };
 		54553DCE1E0AE18300461EE4 /* PMHomePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMHomePageController.h; sourceTree = "<group>"; };
 		54553DCF1E0AE18300461EE4 /* PMHomePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMHomePageController.m; sourceTree = "<group>"; };
 		54553DD11E0AE1A100461EE4 /* PMAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMAccountViewController.h; sourceTree = "<group>"; };
@@ -92,6 +94,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		543234491E10EB2500D65E3A /* WebUploader */ = {
+			isa = PBXGroup;
+			children = (
+				5432344A1E10EB3C00D65E3A /* PMWebUploader.h */,
+				5432344B1E10EB3C00D65E3A /* PMWebUploader.m */,
+			);
+			name = WebUploader;
+			sourceTree = "<group>";
+		};
 		54B081661E0AB9A900CEE760 = {
 			isa = PBXGroup;
 			children = (
@@ -113,10 +124,9 @@
 		54B081711E0AB9A900CEE760 /* PasswordMini */ = {
 			isa = PBXGroup;
 			children = (
+				543234491E10EB2500D65E3A /* WebUploader */,
 				54B081751E0AB9A900CEE760 /* AppDelegate.h */,
 				54B081761E0AB9A900CEE760 /* AppDelegate.m */,
-				54462E901E0E077B00689A8C /* PMPinViewController.h */,
-				54462E911E0E077B00689A8C /* PMPinViewController.m */,
 				54E42E051E0CFF6A00EC1FBA /* AppDelegate+Password.h */,
 				54E42E061E0CFF6A00EC1FBA /* AppDelegate+Password.m */,
 				54553DE21E0AEE7600461EE4 /* PMNavigationController.h */,
@@ -146,8 +156,9 @@
 		54B081721E0AB9A900CEE760 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				54462E841E0D491000689A8C /* PasswordMini-Bridging-Header.h */,
 				54E42DFC1E0CFEF000EC1FBA /* images */,
+				543234471E10E2E000D65E3A /* Web */,
+				54462E841E0D491000689A8C /* PasswordMini-Bridging-Header.h */,
 				54312EBA1E0CA4EB005D2CA0 /* PasswordMini.sqlite3 */,
 				54EE0E011E0B5BEC00ACD887 /* Public.h */,
 				54312EBC1E0CA87F005D2CA0 /* Flags.h */,
@@ -245,6 +256,7 @@
 				54312EBB1E0CA4EB005D2CA0 /* PasswordMini.sqlite3 in Resources */,
 				54E42E041E0CFEF000EC1FBA /* main_lock@2x.png in Resources */,
 				54B0817F1E0AB9A900CEE760 /* Assets.xcassets in Resources */,
+				543234481E10E2E000D65E3A /* Web in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,12 +317,12 @@
 			files = (
 				54B0818B1E0ABD2100CEE760 /* PMBaseController.m in Sources */,
 				54312EB91E0CA383005D2CA0 /* PMPasswordManager.m in Sources */,
+				5432344C1E10EB3C00D65E3A /* PMWebUploader.m in Sources */,
 				54553DD01E0AE18300461EE4 /* PMHomePageController.m in Sources */,
 				54462E861E0DFBD100689A8C /* RNCryptorHelper.swift in Sources */,
 				54B081771E0AB9A900CEE760 /* AppDelegate.m in Sources */,
 				54553DD91E0AE20D00461EE4 /* PMSettingViewController.m in Sources */,
 				54553DE41E0AEE7600461EE4 /* PMNavigationController.m in Sources */,
-				54462E921E0E077B00689A8C /* PMPinViewController.m in Sources */,
 				54B081741E0AB9A900CEE760 /* main.m in Sources */,
 				54E42E0D1E0D022400EC1FBA /* NSObject+CountDown.m in Sources */,
 				54E42E071E0CFF6A00EC1FBA /* AppDelegate+Password.m in Sources */,

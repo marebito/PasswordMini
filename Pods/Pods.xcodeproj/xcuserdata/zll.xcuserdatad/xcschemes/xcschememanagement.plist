@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CocoaLumberjack.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FLKAutoLayout.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,6 +62,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0D75E569038A31868E9DDA13B79ED16F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0F6888E2FE8B61088B103CD9E2F395F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
 		<dict>
 			<key>primary</key>
@@ -67,27 +82,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>324F18602D5EF57D0C85927813C44D87</key>
+		<key>506DC1ABE45E8F735193697F3B938953</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3F75885C4326F5DA543CFAA9E039418E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4244D24C06D50D2983514E32F375E572</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7755C14057233800D8DA594A586B9339</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>85057431366712E4F474A112FE923B4E</key>
+		<key>8A2E8FED01C8A6BC8ADFCF3C3B78368F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,12 +97,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>ADC0BFB29679F6D1ACB1B39C5EA7CB68</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AE28AE53651AA2BBF60B5C13D6F54890</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C6CEE7BEADAD8E11590F1C4ACF7C4BCC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F852C53F2D8509B4C12B7CAF024760A5</key>
+		<key>C894A92037C63647550FC43360FD254A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

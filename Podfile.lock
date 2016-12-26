@@ -14,13 +14,32 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - CocoaLumberjack (2.0.3):
+    - CocoaLumberjack/Default (= 2.0.3)
+    - CocoaLumberjack/Extensions (= 2.0.3)
+  - CocoaLumberjack/Core (2.0.3)
+  - CocoaLumberjack/Default (2.0.3):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.0.3):
+    - CocoaLumberjack/Default
   - FLKAutoLayout (0.2.1)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
   - GCDWebServer (3.3.3):
     - GCDWebServer/Core (= 3.3.3)
+  - GCDWebServer/CocoaLumberjack (3.3.3):
+    - CocoaLumberjack (~> 2)
+    - GCDWebServer/Core
   - GCDWebServer/Core (3.3.3)
+  - GCDWebServer/WebUploader (3.3.3):
+    - GCDWebServer/WebUploader/CocoaLumberjack (= 3.3.3)
+    - GCDWebServer/WebUploader/Core (= 3.3.3)
+  - GCDWebServer/WebUploader/CocoaLumberjack (3.3.3):
+    - GCDWebServer/CocoaLumberjack
+    - GCDWebServer/WebUploader/Core
+  - GCDWebServer/WebUploader/Core (3.3.3):
+    - GCDWebServer/Core
   - ORStackView (3.0.1):
     - FLKAutoLayout (~> 0.2)
   - RNCryptor (5.0.1)
@@ -30,8 +49,10 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - CocoaLumberjack (~> 2.0.0)
   - FMDB
   - GCDWebServer (~> 3.3.3)
+  - GCDWebServer/WebUploader
   - ORStackView (~> 3.0.1)
   - RNCryptor (~> 5.0.1)
   - SAMKeychain
@@ -40,6 +61,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  CocoaLumberjack: f58d8a19629f4d8379ae14bb3534def24161430e
   FLKAutoLayout: 9db6b30c2008d230da608e62c607b11c23b942e6
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   GCDWebServer: 1c39a1f0763e4eb492bee021e4270fce097d3555
@@ -49,6 +71,6 @@ SPEC CHECKSUMS:
   SDAutoLayout: e9b36d04b8c0b504762a04d76fbbe5108944297a
   THPinViewController: 6ea25443b2205bdfaaf5a6db8b05403dfbe0bdec
 
-PODFILE CHECKSUM: 95eafaa82b6c1762d20c114c72d5b6d02c77cc47
+PODFILE CHECKSUM: e48bf11acb70441927f812412dfff949cf84c11f
 
 COCOAPODS: 1.0.1

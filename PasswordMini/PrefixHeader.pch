@@ -19,6 +19,7 @@
 #import "FMDB.h"
 #import "RNCryptor.h"
 #import "SAMKeychain.h"
-#import "GCDWebServer.h"
+#import "GCDWebUploader.h"
+#import "DDLogMacros.h"
 
 #endif /* PrefixHeader_pch */
