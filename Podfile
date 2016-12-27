@@ -12,6 +12,9 @@ def pods
   pod 'THPinViewController'
   pod 'SAMKeychain'
   pod 'FMDB'
+# 动画库
+  pod 'RZTransitions'
+  pod 'FoldingTabBar', '~>1.1'
 end
 target 'PasswordMini' do
   pods

@@ -10,6 +10,7 @@
 #import "PMNavigationController.h"
 #import "PMMainViewController.h"
 #import "THPinViewController.h"
+#import "PMWebUploader.h"
 
 @interface AppDelegate ()<THPinViewControllerDelegate>
 @property(nonatomic, strong) THPinViewController *pinViewController;

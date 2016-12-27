@@ -428,24 +428,55 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3896448EF80AAC09018D1966 /* Pods-PasswordMini.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LQW337MH2W;
+				ENABLE_BITCODE = YES;
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(TARGET_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = PasswordMini/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULEMAP_FILE = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"CocoaLumberjack\"",
+					"-framework",
+					"\"FLKAutoLayout\"",
+					"-framework",
+					"\"FMDB\"",
+					"-framework",
+					"\"GCDWebServer\"",
+					"-framework",
+					"\"ORStackView\"",
+					"-framework",
+					"\"RNCryptor\"",
+					"-framework",
+					"\"SAMKeychain\"",
+					"-framework",
+					"\"SDAutoLayout\"",
+					"-framework",
+					"\"THPinViewController\"",
+				);
+				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.godlike.PasswordMini;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PasswordMini/PasswordMini-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				WARNING_CFLAGS = "-fcxx-modules";
+				WARNING_LDFLAGS = "";
 			};
 			name = Debug;
 		};
@@ -453,23 +484,54 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5CC5B4D46ECB9897F32EF791 /* Pods-PasswordMini.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LQW337MH2W;
+				ENABLE_BITCODE = YES;
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(TARGET_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = PasswordMini/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULEMAP_FILE = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"CocoaLumberjack\"",
+					"-framework",
+					"\"FLKAutoLayout\"",
+					"-framework",
+					"\"FMDB\"",
+					"-framework",
+					"\"GCDWebServer\"",
+					"-framework",
+					"\"ORStackView\"",
+					"-framework",
+					"\"RNCryptor\"",
+					"-framework",
+					"\"SAMKeychain\"",
+					"-framework",
+					"\"SDAutoLayout\"",
+					"-framework",
+					"\"THPinViewController\"",
+				);
+				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.godlike.PasswordMini;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PasswordMini/PasswordMini-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				WARNING_CFLAGS = "-fcxx-modules";
+				WARNING_LDFLAGS = "";
 			};
 			name = Release;
 		};
