@@ -43,18 +43,20 @@ PODS:
   - ORStackView (3.0.1):
     - FLKAutoLayout (~> 0.2)
   - RNCryptor (5.0.1)
+  - RZTransitions (1.2.1)
   - SAMKeychain (1.5.2)
   - SDAutoLayout (2.1.7)
   - THPinViewController (1.2.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
-  - CocoaLumberjack (~> 2.0.0)
+  - CocoaLumberjack (~> 2.0.3)
   - FMDB
   - GCDWebServer (~> 3.3.3)
   - GCDWebServer/WebUploader
   - ORStackView (~> 3.0.1)
   - RNCryptor (~> 5.0.1)
+  - RZTransitions
   - SAMKeychain
   - SDAutoLayout (~> 2.1.7)
   - THPinViewController
@@ -67,10 +69,11 @@ SPEC CHECKSUMS:
   GCDWebServer: 1c39a1f0763e4eb492bee021e4270fce097d3555
   ORStackView: a1bb52748cd0ae29891c140baf22ff8972fb363c
   RNCryptor: 2e352a488779d1a9184ab629be22a7c5bc84acb5
+  RZTransitions: 0e0013fda6989ee84dc5e44dca79fd539e1a975a
   SAMKeychain: 1865333198217411f35327e8da61b43de79b635b
   SDAutoLayout: e9b36d04b8c0b504762a04d76fbbe5108944297a
   THPinViewController: 6ea25443b2205bdfaaf5a6db8b05403dfbe0bdec
 
-PODFILE CHECKSUM: e48bf11acb70441927f812412dfff949cf84c11f
+PODFILE CHECKSUM: a8dcdbd0333fc3c00d34df5b9375d36e35c453cc
 
 COCOAPODS: 1.0.1

@@ -44,6 +44,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RZTransitions.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SAMKeychain.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,16 +67,6 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0D75E569038A31868E9DDA13B79ED16F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>0F6888E2FE8B61088B103CD9E2F395F1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
 		<dict>
 			<key>primary</key>
@@ -82,12 +77,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>506DC1ABE45E8F735193697F3B938953</key>
+		<key>32DFFA292F1DDAA07F68C70EB7839794</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3D5E3F027F3FB8EE577F47FBE0A79036</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7CB1CBD08EC224FC9AE2FB5E694DA0E9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>8A2E8FED01C8A6BC8ADFCF3C3B78368F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>90143B903279C25991745DA87DCB8997</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,17 +112,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AE28AE53651AA2BBF60B5C13D6F54890</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>C6CEE7BEADAD8E11590F1C4ACF7C4BCC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C894A92037C63647550FC43360FD254A</key>
+		<key>D74E9DFE1BB90B2188BFC3FD414F411B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E07866DE8B35B93C7BCC3FBEF127579F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

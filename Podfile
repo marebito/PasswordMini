@@ -12,10 +12,16 @@ def pods
   pod 'THPinViewController'
   pod 'SAMKeychain'
   pod 'FMDB'
-# 动画库
   pod 'RZTransitions'
-  pod 'FoldingTabBar', '~>1.1'
 end
 target 'PasswordMini' do
   pods
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '3.0.2'
+        end
+    end
 end

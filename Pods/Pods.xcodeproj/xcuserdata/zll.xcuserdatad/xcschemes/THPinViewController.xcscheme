@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '506DC1ABE45E8F735193697F3B938953'
+               BlueprintIdentifier = 'D74E9DFE1BB90B2188BFC3FD414F411B'
                BlueprintName = 'THPinViewController'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'THPinViewController.framework'>

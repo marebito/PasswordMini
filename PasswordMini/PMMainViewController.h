@@ -8,6 +8,6 @@
 
 #import "PMBaseController.h"
 
-@interface PMMainViewController : PMBaseController
-
+@interface PMMainViewController : PMBaseController<UICollectionViewDelegate, UICollectionViewDataSource>
+@property(nonatomic, strong) UICollectionView *mCollectionView;
 @end
