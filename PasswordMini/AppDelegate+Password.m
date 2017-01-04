@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate+Password.h"
-#import "PasswordMini-Swift.h"
 
 @implementation AppDelegate (Password)
 
@@ -27,7 +26,7 @@
     // 此处密钥需要打入.a静态库以防止被破解
     NSString *password = @"Secret password";
     
-    NSData *cipherData = [RNCryptorHelper encryptWithData:data withPassword:password];
+//    NSData *cipherData = [RNCryptorHelper encryptWithData:data withPassword:password];
 //
 //    // Decryption
 //    NSError *error = nil;

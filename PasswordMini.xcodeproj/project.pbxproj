@@ -13,6 +13,10 @@
 		543234481E10E2E000D65E3A /* Web in Resources */ = {isa = PBXBuildFile; fileRef = 543234471E10E2E000D65E3A /* Web */; };
 		5432344C1E10EB3C00D65E3A /* PMWebUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5432344B1E10EB3C00D65E3A /* PMWebUploader.m */; };
 		54462E861E0DFBD100689A8C /* RNCryptorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54462E851E0DFBD100689A8C /* RNCryptorHelper.swift */; };
+		545375341E1CDD4500A4A53B /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 545375331E1CDD4500A4A53B /* RSA.m */; };
+		545375381E1CDDF000A4A53B /* pkcs8_rsa_private_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 545375351E1CDDF000A4A53B /* pkcs8_rsa_private_key.pem */; };
+		545375391E1CDDF000A4A53B /* rsa_private_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 545375361E1CDDF000A4A53B /* rsa_private_key.pem */; };
+		5453753A1E1CDDF000A4A53B /* rsa_public_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 545375371E1CDDF000A4A53B /* rsa_public_key.pem */; };
 		54553DD01E0AE18300461EE4 /* PMHomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54553DCF1E0AE18300461EE4 /* PMHomePageController.m */; };
 		54553DD31E0AE1A100461EE4 /* PMAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54553DD21E0AE1A100461EE4 /* PMAccountViewController.m */; };
 		54553DD91E0AE20D00461EE4 /* PMSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54553DD81E0AE20D00461EE4 /* PMSettingViewController.m */; };
@@ -221,6 +225,11 @@
 		5432344B1E10EB3C00D65E3A /* PMWebUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMWebUploader.m; sourceTree = "<group>"; };
 		54462E841E0D491000689A8C /* PasswordMini-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PasswordMini-Bridging-Header.h"; sourceTree = "<group>"; };
 		54462E851E0DFBD100689A8C /* RNCryptorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNCryptorHelper.swift; sourceTree = "<group>"; };
+		545375321E1CDD4500A4A53B /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
+		545375331E1CDD4500A4A53B /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
+		545375351E1CDDF000A4A53B /* pkcs8_rsa_private_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pkcs8_rsa_private_key.pem; sourceTree = "<group>"; };
+		545375361E1CDDF000A4A53B /* rsa_private_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_private_key.pem; sourceTree = "<group>"; };
+		545375371E1CDDF000A4A53B /* rsa_public_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_public_key.pem; sourceTree = "<group>"; };
 		54553DCE1E0AE18300461EE4 /* PMHomePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMHomePageController.h; sourceTree = "<group>"; };
 		54553DCF1E0AE18300461EE4 /* PMHomePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMHomePageController.m; sourceTree = "<group>"; };
 		54553DD11E0AE1A100461EE4 /* PMAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMAccountViewController.h; sourceTree = "<group>"; };
@@ -517,6 +526,8 @@
 				54312EB81E0CA383005D2CA0 /* PMPasswordManager.m */,
 				54E42E0B1E0D022400EC1FBA /* NSObject+CountDown.h */,
 				54E42E0C1E0D022400EC1FBA /* NSObject+CountDown.m */,
+				545375321E1CDD4500A4A53B /* RSA.h */,
+				545375331E1CDD4500A4A53B /* RSA.m */,
 				54462E851E0DFBD100689A8C /* RNCryptorHelper.swift */,
 				54B0817E1E0AB9A900CEE760 /* Assets.xcassets */,
 				54B081831E0AB9A900CEE760 /* Info.plist */,
@@ -528,6 +539,9 @@
 		54B081721E0AB9A900CEE760 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				545375351E1CDDF000A4A53B /* pkcs8_rsa_private_key.pem */,
+				545375361E1CDDF000A4A53B /* rsa_private_key.pem */,
+				545375371E1CDDF000A4A53B /* rsa_public_key.pem */,
 				54E42DFC1E0CFEF000EC1FBA /* images */,
 				543234471E10E2E000D65E3A /* Web */,
 				54462E841E0D491000689A8C /* PasswordMini-Bridging-Header.h */,
@@ -813,6 +827,7 @@
 				548163711E14E5FF001F17C3 /* OS_X_B@2x.png in Resources */,
 				548163C51E14EDC9001F17C3 /* PMCollectionReusableView.xib in Resources */,
 				5481635F1E14E5FF001F17C3 /* medium@2x.png in Resources */,
+				545375381E1CDDF000A4A53B /* pkcs8_rsa_private_key.pem in Resources */,
 				548163181E14E5FF001F17C3 /* Behance@2x.png in Resources */,
 				5481635D1E14E5FF001F17C3 /* Loveui.cn@2x.png in Resources */,
 				5481633F1E14E5FF001F17C3 /* gameui.cn@2x.png in Resources */,
@@ -890,10 +905,12 @@
 				5481634A1E14E5FF001F17C3 /* Hatena_bookmark@2x.png in Resources */,
 				548163381E14E5FF001F17C3 /* Feedly@2x.png in Resources */,
 				548163421E14E5FF001F17C3 /* gold.xitu.io@2x.png in Resources */,
+				545375391E1CDDF000A4A53B /* rsa_private_key.pem in Resources */,
 				548163771E14E5FF001F17C3 /* Pixiv@2x.png in Resources */,
 				548163BC1E14E5FF001F17C3 /* YouTube@2x.png in Resources */,
 				5481638A1E14E5FF001F17C3 /* spotify.com@2x.png in Resources */,
 				5481630E1E14E5FF001F17C3 /* Alibaba@2x.png in Resources */,
+				5453753A1E1CDDF000A4A53B /* rsa_public_key.pem in Resources */,
 				54312EBB1E0CA4EB005D2CA0 /* PasswordMini.sqlite3 in Resources */,
 				5481631A1E14E5FF001F17C3 /* bilibili@2x.png in Resources */,
 				548163241E14E5FF001F17C3 /* Delicious@2x.png in Resources */,
@@ -1050,6 +1067,7 @@
 				54553DD01E0AE18300461EE4 /* PMHomePageController.m in Sources */,
 				54462E861E0DFBD100689A8C /* RNCryptorHelper.swift in Sources */,
 				54B081771E0AB9A900CEE760 /* AppDelegate.m in Sources */,
+				545375341E1CDD4500A4A53B /* RSA.m in Sources */,
 				54553DD91E0AE20D00461EE4 /* PMSettingViewController.m in Sources */,
 				54553DE41E0AEE7600461EE4 /* PMNavigationController.m in Sources */,
 				548163C41E14EDC9001F17C3 /* PMCollectionReusableView.m in Sources */,

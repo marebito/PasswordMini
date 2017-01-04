@@ -7,6 +7,8 @@
 //
 
 #import "PMPasswordManager.h"
+#import "PasswordMini-Swift.h"
+#import "RSA.h"
 
 @interface PMPasswordManager ()
 {
@@ -47,6 +49,62 @@
         }
     }
     return filePath;
+}
+
+- (NSString *)publicKey
+{
+    return @"";
+}
+
+- (NSString *)privateKey
+{
+    return @"";
+}
+
+- (void)encryptString:(NSString *)string style:(PMEncryptStyle)style
+{
+    switch (style) {
+        case PMEncryptStyleAES:
+        {
+            [RNCryptorHelper encryptWithData:[string dataUsingEncoding:NSUTF8StringEncoding] withPassword:@""];
+        }
+            break;
+        case PMEncryptStyleBASE64:
+        {
+            
+        }
+            break;
+        case PMEncryptStyleMD5:
+        {
+            
+        }
+            break;
+        case PMEncryptStyleRSA:
+        {
+            NSString *encrypted = [RSA encryptString:@"hello world!" publicKey:[self publicKey]];
+            NSLog(@"encrypted: %@", encrypted);
+            NSString *decrypted = [RSA decryptString:encrypted privateKey:[self privateKey]];
+            NSLog(@"decrypted: %@", decrypted);
+        }
+            break;
+        default:
+            break;
+    }
+}
+
+- (void)encryptData:(NSData *)data style:(PMEncryptStyle)style
+{
+    
+}
+
+- (void)decryptString:(NSString *)string style:(PMEncryptStyle)style
+{
+    
+}
+
+- (void)decryptData:(NSData *)data style:(PMEncryptStyle)style
+{
+    
 }
 
 @end
